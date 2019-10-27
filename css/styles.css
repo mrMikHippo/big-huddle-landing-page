@@ -25,6 +25,10 @@ header {
   background-color: hsl(193, 100%, 96%);
 }
 
+main {
+  padding: 5%;
+}
+
 button {
   font-weight: 700;
   border: none;
@@ -47,7 +51,9 @@ ul {
   list-style: none;
 }
 
-/* Header */
+/*
+  Header
+*/
 .header {
   display: flex;
   justify-content: space-between;
@@ -98,4 +104,24 @@ ul {
 
 .hero-img img {
   max-width: 100%;
+}
+
+/* Main section */
+.card {
+  padding: 30px;
+  margin: 20px 0;
+  border-radius: 7px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.card-image {
+  margin-bottom: 20px;
+}
+
+.card-image img {
+  max-width: 100%;
+}
+
+.card-description p {
+  color: hsl(208, 11%, 55%);
 }
