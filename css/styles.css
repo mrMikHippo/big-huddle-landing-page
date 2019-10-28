@@ -9,11 +9,9 @@ html {
 body {
   margin: 0;
   font-size: 16px;
-
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 1.7;
-
   text-align: center;
 }
 
@@ -33,7 +31,15 @@ button {
   font-weight: 700;
   border: none;
   border-radius: 25px;
-  box-shadow: 0 1px 7px rgba(0,0,0,0.2);
+  box-shadow: 0 1px 7px rgba(0, 0, 0, 0.2);
+  transition: all .5s ease;
+}
+
+button:hover {
+  transition: all 0.5s ease;
+  color: hsl(240, 90%, 100%);
+  background-color: #24BCEE;
+  text-shadow: 0 0 2px rgba(0,0,0,0.1);
 }
 
 h1, h2 {
@@ -49,6 +55,7 @@ a {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 /*
@@ -73,13 +80,6 @@ ul {
   font-size: 1rem;
   background-color: white;
   font-size: 1rem;
-  transition: all 0.5s ease;
-}
-
-.try-it-btn:hover {
-  transition: all 0.5s ease;
-  color: white;
-  background-color: hsl(192, 100%, 9%);
 }
 
 /* Header Hero section */
@@ -111,7 +111,7 @@ ul {
   padding: 30px;
   margin: 20px 0;
   border-radius: 7px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 .card-image {
@@ -124,4 +124,59 @@ ul {
 
 .card-description p {
   color: hsl(208, 11%, 55%);
+}
+
+/* Footer */
+footer {
+  position: relative;
+  background: hsl(192, 100%, 9%);
+  color: hsl(240, 90%, 100%);
+  padding: 100px 5% 5%;
+  margin-top: 200px;
+  text-align: left;
+}
+
+.contact {
+  width: 90%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  position: absolute;
+  top: -17%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  border-radius: 1rem;
+  padding: 2rem;
+  color: hsl(192, 100%, 9%);
+  background-color: white;
+}
+
+.contact h2 {
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.contact .footer-btn {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.footer-logo svg path {
+  fill: #fff;
+}
+
+.footer-text {
+  padding-left: 50px;
+  margin: 1rem 0;
+  position: relative;
+}
+
+.footer-text:before {
+  content: '';
+  position: absolute;
+  height: 27px;
+  width: 20px;
+  background: url('../images/icon-location.svg') no-repeat;
+  background-size: cover;
+  left: 3px;
+  top: 8px;
 }
