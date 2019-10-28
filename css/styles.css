@@ -51,6 +51,7 @@ h1, h2 {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 ul {
@@ -132,15 +133,15 @@ footer {
   background: hsl(192, 100%, 9%);
   color: hsl(240, 90%, 100%);
   padding: 100px 5% 5%;
-  margin-top: 200px;
+  margin-top: 150px;
   text-align: left;
 }
 
-.contact {
+.get-started {
   width: 90%;
   box-shadow: 0 0 5px rgba(0,0,0,0.2);
   position: absolute;
-  top: -17%;
+  top: -6rem;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
@@ -148,14 +149,18 @@ footer {
   padding: 2rem;
   color: hsl(192, 100%, 9%);
   background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.contact h2 {
+.get-started h2 {
   margin-bottom: 20px;
   font-size: 1rem;
 }
 
-.contact .footer-btn {
+.get-started .footer-btn {
   font-size: 0.8rem;
   font-weight: 400;
 }
@@ -164,19 +169,66 @@ footer {
   fill: #fff;
 }
 
-.footer-text {
+.footer-text, .phone, .email {
   padding-left: 50px;
-  margin: 1rem 0;
+  margin: 2rem 0;
   position: relative;
 }
 
-.footer-text:before {
+li[class~="icon"]:before {
   content: '';
   position: absolute;
   height: 27px;
-  width: 20px;
-  background: url('../images/icon-location.svg') no-repeat;
-  background-size: cover;
+  width: 27px;
+  background-repeat: no-repeat;
+  background-size: contain;
   left: 3px;
+}
+
+.footer-text:before {
+  background-image: url('../images/icon-location.svg');
   top: 8px;
+}
+
+.phone:before {
+  background-image: url('../images/icon-phone.svg');
+}
+
+.email:before {
+  background-image: url('../images/icon-email.svg');
+}
+
+.about-us li, .something-with-us li {
+  margin: 1.5rem 0;
+  font-size: 1.5rem;
+}
+
+.social-links {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.social-links li {
+  width: 50px;
+  height: 50px;
+  margin: 7px;
+}
+.social-links li a {
+  border: 1px solid white;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-links li a:hover {
+  color: hsl(322, 100%, 66%);
+  border-color: hsl(322, 100%, 66%);
+}
+
+.copyright {
+  text-align: center;
 }
