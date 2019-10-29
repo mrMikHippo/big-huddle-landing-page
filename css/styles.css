@@ -39,7 +39,7 @@ button:hover {
   transition: all 0.5s ease;
   color: hsl(240, 90%, 100%);
   background-color: #24BCEE;
-  text-shadow: 0 0 2px rgba(0,0,0,0.1);
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
 }
 
 h1, h2 {
@@ -139,7 +139,7 @@ footer {
 
 .get-started {
   width: 90%;
-  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   position: absolute;
   top: -6rem;
   left: 50%;
@@ -149,7 +149,6 @@ footer {
   padding: 2rem;
   color: hsl(192, 100%, 9%);
   background-color: white;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -165,11 +164,15 @@ footer {
   font-weight: 400;
 }
 
+.footer-logo {
+  margin-top: 50px;
+}
+
 .footer-logo svg path {
   fill: #fff;
 }
 
-.footer-text, .phone, .email {
+.footer-contacts, .phone, .email {
   padding-left: 50px;
   margin: 2rem 0;
   position: relative;
@@ -185,7 +188,7 @@ li[class~="icon"]:before {
   left: 3px;
 }
 
-.footer-text:before {
+.footer-contacts:before {
   background-image: url('../images/icon-location.svg');
   top: 8px;
 }
@@ -214,6 +217,7 @@ li[class~="icon"]:before {
   height: 50px;
   margin: 7px;
 }
+
 .social-links li a {
   border: 1px solid white;
   border-radius: 50%;
